@@ -1,0 +1,196 @@
+:root {
+  /* Font Variables */
+  --main-font: 'Roboto', sans-serif;
+  --secondary-font: 'Raleway', sans-serif;
+
+  /* Font Weights */
+  --weight-regular: 400;
+  --weight-medium: 500;
+  --weight-bold: 700;
+
+  /* colors */
+  --white: 255, 255, 255;
+  --cloud: 244, 244, 253;
+  --iris: 77, 90, 229;
+  --navy-blue: 46, 47, 66;
+  --slate: 67, 68, 85;
+  --ocean: 64, 75, 191;
+}
+
+body {
+  font-family: var(--main-font);
+  font-weight: var(--weight-regular);
+  line-height: 1.5;
+  letter-spacing: 0.02em;
+  color: rgb(var(--slate));
+  background-color: rgb(var(--white));
+}
+
+h1,
+h2 {
+  font-weight: var(--weight-bold);
+  text-align: center;
+  text-transform: capitalize;
+  letter-spacing: 0.02em;
+}
+
+h2 {
+  font-size: 36px;
+  line-height: 1.11;
+  color: rgb(var(--navy-blue));
+}
+
+h3 {
+  font-size: 20px;
+  line-height: 1.2;
+  font-weight: var(--weight-medium);
+  color: rgb(var(--navy-blue));
+  text-transform: capitalize;
+  letter-spacing: 0.02em;
+}
+
+a {
+  text-decoration: none;
+}
+
+li {
+  list-style-type: none;
+}
+
+button {
+  cursor: pointer;
+  line-height: 1.5;
+}
+
+.page-header {
+  background-color: rgb(var(--white));
+}
+
+.main-navigation {
+}
+
+.brand-logo {
+  font-family: var(--secondary-font);
+  font-weight: var(--weight-bold);
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: rgb(var(--iris));
+}
+
+.brand-logo-header-text {
+  color: rgb(var(--navy-blue));
+}
+
+.navigation-menu {
+}
+.navigation-item {
+}
+
+.navigation-link {
+  font-weight: var(--weight-medium);
+  color: rgb(var(--navy-blue));
+}
+
+.navigation-link:hover {
+  color: rgb(var(--ocean));
+}
+.navigation-link:focus,
+.navigation-link:active {
+  color: rgb(var(--ocean));
+  text-decoration: underline;
+  text-decoration-color: rgb(var(--ocean));
+}
+
+.contact-info {
+  font-style: normal;
+}
+.contact-list {
+}
+.contact-item {
+}
+.contact-link {
+  color: rgb(var(--slate));
+}
+.contact-link:hover,
+.contact-link:focus,
+.contact-link:active {
+  color: rgb(var(--ocean));
+}
+
+.hero-section {
+  background-color: rgb(var(--navy-blue));
+}
+.hero-title {
+  font-size: 56px;
+  line-height: 1.07;
+  color: rgb(var(--white));
+}
+.cta-button {
+  font-weight: var(--weight-medium);
+  letter-spacing: 0.04em;
+  color: rgb(var(--white));
+  background-color: rgb(var(--iris));
+}
+.cta-button:hover,
+.cta-button:focus,
+.cta-button:active {
+  background-color: rgb(var(--ocean));
+}
+.strengths-section {
+}
+.section-title {
+}
+.strengths-list {
+}
+.strength-item {
+}
+.strength-title {
+}
+.strength-description {
+}
+.team-section {
+  background-color: rgb(var(--cloud));
+}
+.team-section-title {
+}
+.team-list {
+}
+.team-member {
+  background-color: rgb(var(--white));
+}
+.team-photo {
+}
+.team-name {
+  text-align: center;
+}
+.team-role {
+  text-align: center;
+}
+
+.portfolio-section {
+}
+.portfolio-title {
+}
+.portfolio-list {
+}
+.portfolio-item {
+}
+.portfolio-img {
+}
+.portfolio-item-title {
+}
+.portfolio-item-text {
+}
+
+.page-footer {
+  background-color: rgb(var(--navy-blue));
+}
+
+.brand-logo-footer-text {
+  color: rgb(var(--cloud));
+}
+.footer-text {
+  color: rgb(var(--cloud));
+}

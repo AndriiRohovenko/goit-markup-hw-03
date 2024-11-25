@@ -1,3 +1,4 @@
+/* #region variables */
 :root {
   /* Font Variables */
   --main-font: 'Roboto', sans-serif;
@@ -16,6 +17,9 @@
   --slate: 67, 68, 85;
   --ocean: 64, 75, 191;
 }
+/* #endregion */
+
+/* #region Common */
 
 body {
   font-family: var(--main-font);
@@ -24,6 +28,34 @@ body {
   letter-spacing: 0.02em;
   color: rgb(var(--slate));
   background-color: rgb(var(--white));
+}
+
+main {
+  flex-grow: 1;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+  list-style: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 h1,
@@ -50,6 +82,7 @@ h3 {
 }
 
 a {
+  display: inline-block;
   text-decoration: none;
 }
 
@@ -60,13 +93,39 @@ li {
 button {
   cursor: pointer;
   line-height: 1.5;
+  border: 1px solid transparent;
+}
+
+.page-container {
+  max-width: 1440px;
+  min-height: 100vh;
+  padding: 15px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+/* #endregion */
+
+/* #region Header */
+
+.header-content {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-left: 156px;
+  margin-right: 156px;
 }
 
 .page-header {
   background-color: rgb(var(--white));
+  padding: 25.5px;
 }
 
 .main-navigation {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .brand-logo {
@@ -77,6 +136,7 @@ button {
   letter-spacing: 0.03em;
   text-transform: uppercase;
   color: rgb(var(--iris));
+  margin-right: 76px;
 }
 
 .brand-logo-header-text {
@@ -84,6 +144,8 @@ button {
 }
 
 .navigation-menu {
+  display: flex;
+  gap: 40px;
 }
 .navigation-item {
 }
@@ -107,6 +169,8 @@ button {
   font-style: normal;
 }
 .contact-list {
+  display: flex;
+  gap: 40px;
 }
 .contact-item {
 }
@@ -118,79 +182,165 @@ button {
 .contact-link:active {
   color: rgb(var(--ocean));
 }
+/* #endregion */
+
+/* #region Hero first section */
+.hero-section-content {
+  display: block;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 188px 472px;
+}
 
 .hero-section {
   background-color: rgb(var(--navy-blue));
+  height: 600px;
 }
 .hero-title {
   font-size: 56px;
   line-height: 1.07;
   color: rgb(var(--white));
+  margin-bottom: 48px;
+  width: 496px;
 }
 .cta-button {
   font-weight: var(--weight-medium);
   letter-spacing: 0.04em;
   color: rgb(var(--white));
   background-color: rgb(var(--iris));
+  display: inline-flex;
+  padding: 16px 32px;
+  align-items: flex-start;
+  gap: 10px;
+  border-radius: 4px;
+  box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.15);
 }
 .cta-button:hover,
 .cta-button:focus,
 .cta-button:active {
   background-color: rgb(var(--ocean));
 }
+/* #endregion */
+
+/* #region Strenghts section */
 .strengths-section {
+  padding: 120px 156px;
 }
+
+.strength-section-content {
+  justify-content: space-between;
+  align-items: center;
+}
+
 .section-title {
 }
 .strengths-list {
+  display: flex;
+  gap: 24px;
 }
 .strength-item {
 }
 .strength-title {
+  margin-bottom: 8px;
 }
 .strength-description {
 }
+/* #endregion */
+
+/* #region Team section */
 .team-section {
   background-color: rgb(var(--cloud));
 }
+
+.team-section-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 120px 156px;
+}
+
 .team-section-title {
+  margin-bottom: 72px;
 }
 .team-list {
+  display: flex;
+  gap: 24px;
 }
 .team-member {
   background-color: rgb(var(--white));
+  border-radius: 0px 0px 4px 4px;
 }
 .team-photo {
 }
+
+.team-info-content {
+  padding: 32px 16px;
+}
+
 .team-name {
   text-align: center;
 }
 .team-role {
   text-align: center;
 }
+/* #endregion */
 
+/* #region Portolio section  */
 .portfolio-section {
 }
+
+.portfolio-section-content {
+  padding: 120px 156px;
+}
+
 .portfolio-title {
+  margin-bottom: 72px;
 }
 .portfolio-list {
+  display: flex;
+  gap: 24px;
+  flex-wrap: wrap;
 }
 .portfolio-item {
+  width: calc((100% - 24px * 2) / 3);
+  border-right: 1px solid var(--CORNFLOWER, #e7e9fc);
+  border-bottom: 1px solid var(--CORNFLOWER, #e7e9fc);
+  border-left: 1px solid var(--CORNFLOWER, #e7e9fc);
 }
+
 .portfolio-img {
+}
+
+.portfolio-item-description {
+  padding: 32px 16px;
 }
 .portfolio-item-title {
 }
 .portfolio-item-text {
 }
+/* #endregion */
 
+/* #region Footer section */
 .page-footer {
   background-color: rgb(var(--navy-blue));
+}
+
+.footer-content {
+  height: 312px;
+  display: flex;
+  flex-direction: column;
+  padding: 101.5px 1020px 100px 156px;
 }
 
 .brand-logo-footer-text {
   color: rgb(var(--cloud));
 }
 .footer-text {
+  margin-top: 17.5px;
   color: rgb(var(--cloud));
 }
+
+/* #endregion */

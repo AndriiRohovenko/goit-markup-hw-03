@@ -108,7 +108,7 @@ button {
   /* min-height: 100vh; */
   padding: 0 15px;
   margin: 0 auto;
-  /* display: flex; */
+  display: flex;
   flex-direction: column;
   gap: 16px;
   align-items: center;
@@ -132,7 +132,7 @@ button {
 /* #region Header */
 
 .page-header .container {
-  /* display: flex; */
+  display: flex;
   flex-direction: row; /* Ensure navigation and contact info are in one row */
 }
 
@@ -255,10 +255,10 @@ button {
   align-items: center;
 }
 
-/* .strength-details {
+.strength-details {
   padding-top: 32px;
   padding-bottom: 32px;
-} */
+}
 
 .strengths-list {
   display: flex;
@@ -266,8 +266,6 @@ button {
 }
 .strength-item {
   flex-basis: calc((100% - 3 * 24px) / 4); /* Dynamically calculates width */
-  padding-top: 32px;
-  padding-bottom: 32px;
 }
 .strength-title {
   margin-bottom: 8px;

@@ -88,7 +88,7 @@ h3 {
 }
 
 a {
-  display: inline-block;
+  /* display: inline-block; */
   text-decoration: none;
 }
 
@@ -178,6 +178,7 @@ button {
   color: rgb(var(--navy-blue));
   padding-top: 24px;
   padding-bottom: 24px;
+  display: inline-block;
 }
 
 .navigation-link:hover {
@@ -373,6 +374,7 @@ button {
   color: rgb(var(--iris));
   margin-right: 76px;
   margin-bottom: 16px;
+  display: inline-block;
 }
 
 .brand-logo-footer-text {

@@ -258,9 +258,6 @@ button {
 .strengths-section {
   padding-top: 120px;
   padding-bottom: 120px;
-}
-
-.strength-section-content {
   justify-content: space-between;
   align-items: center;
 }
@@ -284,9 +281,6 @@ button {
 /* #region Team section */
 .team-section {
   background-color: rgb(var(--cloud));
-}
-
-.team-section-content {
   display: flex;
   flex-direction: column;
   justify-content: space-between;
@@ -325,9 +319,6 @@ button {
 
 /* #region Portolio section  */
 .portfolio-section {
-}
-
-.portfolio-section-content {
   padding: 60px 156px;
 }
 
@@ -370,7 +361,15 @@ button {
   padding-top: 100px;
 }
 
-.footer-logo-link {
+.brand-logo-footer {
+  font-family: var(--secondary-font);
+  font-weight: var(--weight-bold);
+  font-size: 18px;
+  line-height: 1.17;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: rgb(var(--iris));
+  margin-right: 76px;
   display: inline-block;
   margin-bottom: 16px;
 }

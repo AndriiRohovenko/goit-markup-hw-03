@@ -260,9 +260,9 @@ button {
   padding-bottom: 32px;
 }
 
-.section-title {
+/* .section-title {
   margin-bottom: 8px;
-}
+} */
 .strengths-list {
   display: flex;
   gap: 24px;
@@ -351,6 +351,8 @@ button {
 /* #region Footer section */
 .page-footer {
   background-color: rgb(var(--navy-blue));
+  padding-top: 100px;
+  padding-bottom: 100px;
 }
 
 .page-footer .container {
@@ -359,7 +361,6 @@ button {
   height: 312px;
   display: flex;
   flex-direction: column;
-  padding-top: 100px;
 }
 
 .brand-logo-footer {
@@ -373,6 +374,7 @@ button {
   margin-right: 76px;
   display: inline-block;
   margin-bottom: 16px;
+  display: inline-block;
 }
 
 .brand-logo-footer-text {

@@ -116,17 +116,17 @@ button {
 }
 
 .visually-hidden {
-  position: absolute; /* Remove it from normal flow */
-  width: 1px; /* Shrink it to a very small size */
-  height: 1px; /* Shrink it to a very small size */
-  padding: 0;
-  margin: -1px; /* Prevent any margin from affecting layout */
-  overflow: hidden; /* Hide overflowing content */
-  clip: rect(0, 0, 0, 0); /* Clip the element */
-  white-space: nowrap; /* Prevent text wrapping */
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
   border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
-
 /* #endregion */
 
 /* #region Header */
@@ -372,9 +372,7 @@ button {
   text-transform: uppercase;
   color: rgb(var(--iris));
   margin-right: 76px;
-  display: inline-block;
   margin-bottom: 16px;
-  display: inline-block;
 }
 
 .brand-logo-footer-text {

@@ -115,13 +115,13 @@ button {
   justify-content: center; */
 }
 
-.container-column {
+/* .container-column {
   display: flex;
   flex-direction: column;
   gap: 16px;
   align-items: center;
   justify-content: center;
-}
+} */
 
 .visually-hidden {
   position: absolute;
@@ -140,7 +140,10 @@ button {
 /* #region Header */
 
 .page-header .container {
+  display: flex;
   flex-direction: row; /* Ensure navigation and contact info are in one row */
+  align-items: center;
+  justify-content: center;
 }
 
 .page-header {
@@ -225,6 +228,13 @@ button {
   height: 600px;
   padding-top: 188px;
   padding-bottom: 188px;
+}
+
+.hero-section .container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
 }
 
 .hero-title {
@@ -360,10 +370,10 @@ button {
 }
 
 .page-footer .container {
-  align-items: flex-start;
-  justify-content: flex-start;
+  /* align-items: flex-start;
+  justify-content: flex-start; */
   height: 312px;
-  flex-direction: column;
+  /* flex-direction: column; */
 }
 
 .brand-logo-footer {

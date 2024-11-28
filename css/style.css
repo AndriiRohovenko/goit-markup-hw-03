@@ -158,6 +158,7 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  margin-right: auto;
 }
 
 .brand-logo {
@@ -178,7 +179,6 @@ button {
 .navigation-menu {
   display: flex;
   gap: 40px;
-  margin-right: 332px;
 }
 .navigation-item {
 }
@@ -369,13 +369,6 @@ button {
   padding-bottom: 100px;
 }
 
-.page-footer .container {
-  /* align-items: flex-start;
-  justify-content: flex-start; */
-  height: 312px;
-  /* flex-direction: column; */
-}
-
 .brand-logo-footer {
   font-family: var(--secondary-font);
   font-weight: var(--weight-bold);
@@ -392,7 +385,6 @@ button {
   color: rgb(var(--cloud));
 }
 .footer-text {
-  margin-top: 17.5px;
   color: rgb(var(--cloud));
   width: 264px;
 }
